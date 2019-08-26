@@ -9,20 +9,33 @@ package contacts;
  *
  * @author CCannon
  */
-public class Contact {
+public class Contact 
+{
     private String firstName;
     private String lastName;
     private String phoneNumber;
     private String emailAddress;
 
-    public Contact(String firstName, String lastName, String phoneNumber, String emailAddress) {
+    public Contact(String firstName, String lastName, String phoneNumber, String emailAddress) 
+    {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.emailAddress = emailAddress;
     }
     
-    public String toString(){
-        return firstName + " " + lastName  " " + phoneNumber + " " + emailAddress;
+    public String toString()
+    {
+        return firstName + " " + lastName + " " + phoneNumber + " " + emailAddress;
+    }
+    
+    public String getFirstName()
+    {
+        return firstName;
+    }
+    
+    public String getLastName()
+    {
+        return lastName;
     }
 }
